@@ -15,6 +15,12 @@ a,
   transition: 0.4s;
 }
 
+.honey {
+  text-decoration: none;
+  color: hsl(48, 100%, 56%);
+  transition: 0.4s;
+}
+
 @media (hover: hover) {
   a:hover {
     background-color: hsla(160, 100%, 37%, 0.2);
@@ -33,3 +39,17 @@ a,
     padding: 0 2rem;
   }
 }
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  padding-top: 150px;
+  font-size: 1rem;
+}
+
+#app {
+  padding-bottom:40px
+}
+

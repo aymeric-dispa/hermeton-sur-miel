@@ -1,3 +1,5 @@
+<!-- This code was kept from the create-vue repository and was renamed from WelcomeItem.vue to Item.vue -->
+<!-- This code is licensed under MIT license (see LICENSE for details) -->
 <template>
   <div class="item">
     <i>
