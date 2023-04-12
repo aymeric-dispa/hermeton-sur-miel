@@ -1,34 +1,37 @@
 <script setup lang="ts">
 import { RouterLink, RouterView } from 'vue-router'
-import Header from './components/Header.vue'
+import Header from './components/Welcome.vue'
 </script>
 
 <template>
   <header>
-    <img alt="Vue logo" class="logo" src="@/assets/bee.jpg" width="125" height="125" />
+    <picture>
+      <source srcset="@/assets/logo-dark.png" media="(prefers-color-scheme: dark)" >
+      <img alt="Vue logo" class="logo" src="@/assets/logo.png" width="150" height="150" />
+    </picture>
 
     <div class="wrapper">
       <Header msg="Hermeton-sur-Miel" />
-
       <nav>
         <RouterLink to="/">Accueil</RouterLink>
         <RouterLink to="/about">Acheter du miel</RouterLink>
       </nav>
     </div>
   </header>
-  <RouterView />
+
+ <RouterView class="routerView"/>
 </template>
 
 <style scoped>
 header {
   line-height: 1.5;
-  max-height: 100vh;
 }
 
 .logo {
   display: block;
-  margin: 0 auto 2rem;
+  margin: 0 auto 1rem;
 }
+
 
 nav {
   width: 100%;
@@ -55,6 +58,7 @@ nav a:first-of-type {
   border: 0;
 }
 
+
 @media (min-width: 1024px) {
   header {
     display: flex;
@@ -63,7 +67,7 @@ nav a:first-of-type {
   }
 
   .logo {
-    margin: 0 2rem 0 0;
+    margin: 0 1rem 0 0;
   }
 
   header .wrapper {
@@ -79,7 +83,9 @@ nav a:first-of-type {
 
     padding: 1rem 0;
     margin-top: 1rem;
+    position: relative;
   }
 
 }
+
 </style>
