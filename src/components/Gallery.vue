@@ -41,12 +41,12 @@ export default defineComponent({
 </script>
 <template>
   <div>
-    <button @click="showMultiple(0)"><img v-bind:src="imgsRef[0]" alt="Pots de miel"/></button>
-    <button @click="showMultiple(1)"><img v-bind:src="imgsRef[1]" alt="Fille en tenue d'apiculteur"/></button>
-    <button @click="showMultiple(2)"><img v-bind:src="imgsRef[2]" alt="Ruches"/></button>
-    <button @click="showMultiple(3)"><img v-bind:src="imgsRef[3]" alt="Apiculteur"/></button>
-    <button @click="showMultiple(4)"><img v-bind:src="imgsRef[4]" alt="Moutons devant des ruches"/></button>
-    <button @click="showMultiple(5)"><img v-bind:src="imgsRef[5]" alt="Abeilles"/></button>
+    <button @click="showMultiple(0)"><img src="@/assets/thumbnails/jars.jpg" alt="Pots de miel"/></button>
+    <button @click="showMultiple(1)"><img src="@/assets/thumbnails/girl.jpg" alt="Fille en tenue d'apiculteur"/></button>
+    <button @click="showMultiple(2)"><img src="@/assets/thumbnails/hives.jpg" alt="Ruches"/></button>
+    <button @click="showMultiple(3)"><img src="@/assets/thumbnails/beekeeper.jpg" alt="Apiculteur"/></button>
+    <button @click="showMultiple(4)"><img src="@/assets/thumbnails/sheep.jpg" alt="Moutons devant des ruches"/></button>
+    <button @click="showMultiple(5)"><img src="@/assets/thumbnails/bees.jpg" alt="Abeilles"/></button>
     <vue-easy-lightbox
         :visible="visibleRef"
         :imgs="imgsRef"
